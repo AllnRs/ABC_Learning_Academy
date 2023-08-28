@@ -1,0 +1,494 @@
+@media (max-width: 768px) {
+    /* Ajustes para pantallas más pequeñas */
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .menu {
+        display: none; /* Ocultar el menú principal y mostrar un menú de hamburguesa */
+    }
+
+    .container {
+        padding: 10px; /* Reducir el espacio entre los elementos en pantallas pequeñas */
+    }
+
+    /* Estilos específicos para elementos individuales en pantallas pequeñas */
+    .elemento {
+        width: 100%; /* Asegurarse de que los elementos ocupen todo el ancho disponible */
+        margin-bottom: 10px;
+    }
+}
+  
+/* Agrega estilos a la primera palabra del título */
+.word1 {
+    font-weight: bold;
+    /* Agrega otros estilos según tu preferencia */
+}
+
+/* Agrega estilos a la segunda palabra del título */
+.word2 {
+    font-style: italic;
+    /* Agrega otros estilos según tu preferencia */
+}
+
+/* Agrega estilos a la tercera palabra del título */
+.word3 {
+    color: #FF5733;
+    /* Agrega otros estilos según tu preferencia */
+}
+
+/* Estilo para el apartado de título e información */
+
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    background-color: purple;
+    color: white;
+    margin-top: 1cm;
+    padding: 7rem; /* Ajusta el padding según tu diseño */
+}
+
+.info-box {
+    flex: 1;
+    padding-right: 29rem; /* Agrega un margen derecho para separar del formulario */
+}
+
+/* Estilo para el título personalizado con fuente más gruesa y redonda */
+.custom-heading {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem; /* Ajusta el tamaño de fuente según tu diseño */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Ajusta la fuente según tu diseño */
+}
+
+
+.custom-paragraph {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem; /* Ajusta el tamaño de fuente según tu diseño */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Ajusta la fuente según tu diseño */
+}
+
+
+
+
+.registration-form-container {
+    position: absolute;
+    right: 5rem;
+    top: 1px;
+    background-color: #fff;
+    border: 3px solid #FF5733; /* Cambia el color del borde a morado */
+    max-width: 1200px;
+    border-radius: 5px;
+    padding: 2rem; /* Ajusta el margen interno según tu diseño */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    width: 450px; /* Ajusta el ancho según tu diseño */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    z-index: 1; /* Asegura que el formulario esté encima del fondo morado */
+}
+
+
+/* Estilo para el encabezado del formulario */
+.form-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Ajusta la fuente según tu diseño */
+}
+
+/* Estilos para el formulario */
+.input-group {
+    margin-bottom: 1.5rem; /* Espacio entre grupos de campos */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los campos dentro del grupo */
+}
+
+/* Estilos para los campos de entrada */
+.input-group input,
+.input-group select {
+    flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los campos */
+    padding: 0.5rem; /* Espacio interno para los campos */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Estilos para las etiquetas de los campos */
+.input-group label {
+    font-weight: bold; /* Texto en negrita */
+    color: #333;
+    flex-basis: 100%; /* Ocupa todo el ancho disponible en una sola línea */
+    margin-bottom: 0.5rem; /* Espacio inferior entre etiquetas y campos */
+}
+
+/* Estilos para los asteriscos en rojo */
+.input-group label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 2px; /* Ajusta el espaciado entre el texto y el asterisco */
+}
+
+/* Estilos para la casilla de verificación */
+.privacy-checkbox {
+    margin-top: 1rem; /* Margen superior para separarlo de los campos anteriores */
+}
+
+/* Estilos para el botón de enviar */
+.input-group button {
+    background-color: #FF5733; /* Color de fondo morado */
+    color: white; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    padding: 0.5rem 1rem; /* Espacio interno para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+
+
+/* Estilos para el apartado "Somos tu mejor opción" */
+.best-option {
+    margin-top: 3rem; /* Ajusta el margen superior según tu diseño */
+    padding: 4rem;
+    background-color: white; /* Cambia el color de fondo a blanco */
+   
+}
+
+.best-option-heading {
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.best-option-list {
+    list-style-type: none; /* Quita las viñetas predeterminadas */
+    margin-left: 2rem; /* Espacio a la izquierda para la lista */
+    padding-left: 0; /* Quita el relleno predeterminado de la lista */
+}
+
+.best-option-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente según tu preferencia */
+}
+
+
+.best-option-list li::before {
+    content: "\2022"; /* Código del carácter de asterisco */
+    position: absolute;
+    left: 0; /* Posición desde el borde izquierdo del elemento */
+    color: #FF5733; /* Cambia el color del asterisco */
+}
+
+/* Estilos para el apartado "Únete a nuestro grupo de estudiantes" */
+.join-us {
+    text-align: center; /* Centra el contenido */
+    margin-top: 3rem; /* Ajusta el margen superior según tu diseño */
+}
+
+.join-us-heading {
+    font-size: 2rem; /* Tamaño de fuente grande */
+    margin-bottom: 1rem;
+    background-image: linear-gradient(45deg, #FF5733, #FFA500, #0074D9); /* Degradado de fondo */
+    background-clip: text; /* Aplica el degradado al texto */
+    -webkit-background-clip: text; /* Aplica el degradado al texto para navegadores webkit */
+    color: transparent; /* Hace el texto transparente para que se vea el degradado de fondo */
+    animation: colorChange 5s infinite alternate; /* Animación de cambio de color */
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5)); /* Sombra de texto suave */
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.logos-section {
+    margin-top: 3rem; /* Ajusta el margen superior según tu diseño */
+}
+
+.logos {
+    display: flex; /* Activa el modo flexbox */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo {
+    text-align: center;
+    width: calc(33.33% - 1rem); /* Divide el espacio en tres columnas y resta un poco de margen */
+    margin: 0.5rem; /* Espacio alrededor de cada logo */
+}
+
+/* Estilos para el contenido del logo */
+.logo svg {
+    width: 64px; /* Tamaño del logo */
+    height: 64px;
+    fill: #074de4b9; /* Color del logo */
+    margin-bottom: 0.5rem; /* Espacio inferior del logo */
+}
+
+.logo p {
+    font-size: 1.3rem; /* Tamaño de fuente para el texto */
+    color: #333;
+}
+
+.levels-section {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.levels-heading {
+    margin-bottom: 1rem;
+}
+
+@keyframes colorChange {
+    0% { background-clip: text; color: transparent; }
+    25% { background-clip: text; color: transparent; }
+    50% { background-clip: text; color: transparent; }
+    75% { background-clip: text; color: transparent; }
+    100% { background-clip: text; color: transparent; }
+}
+
+.levels-heading h2 {
+    font-size: 5rem;
+    background: linear-gradient(45deg, red, orange, blue, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 8s infinite;
+}
+
+
+.levels-list {
+    display: flex; /* Activa el modo flexbox */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+.level {
+    flex: 1; /* Distribuye el espacio de manera equitativa entre los niveles */
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem; /* Espacio interno */
+    border: 2px solid #ccc; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f7f7f7; /* Color de fondo */
+}
+
+.level h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.level p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+#about-us {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#about-us p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+#teachers {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.teacher-info {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.teacher-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.teacher-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.teacher-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+#study-methods {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.study-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.study-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.study-info {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.study-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.study-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+
+.faq-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.faq-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.faq-question.active {
+    color: #00abfb;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+
+.faq-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.faq-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    font-size: 1.2rem;
+    transform: translateY(2px);
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.faq-question.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+
+
+
+/* Agrega otros estilos específicos para los campos del formulario si es necesario */
+
+
+.politica-section {
+    /* Estilos para la sección de política de privacidad */
+    margin-top: 2rem; /* Margen superior para separarlo del formulario */
+    padding: 2rem; /* Espacio interno para el contenido de la política de privacidad */
+    border: 1px solid #ccc; /* Borde alrededor de la sección */
+    background-color: #f9f9f9; /* Color de fondo de la sección */
+}
